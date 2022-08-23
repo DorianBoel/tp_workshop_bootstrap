@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to- fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>SGP - Accueil</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h1>
+                Navbar
+            </h1>
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Collaborateurs <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Statistiques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Activités</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-5">
+        <div class="d-flex justify-content-end mt-4">
+            <button class="btn btn-secondary">Ajouter un nouveau collaborateur</button>
+        </div>
+        <h2 class="mt-3">Les collaborateurs</h2>
+
+        <form action="">
+            <div class="row justify-content-between">
+                <div class="col-auto row">
+                    <div class="col-auto p-0">
+                        <div class="form-group row justify-content-end">
+                            <label class="col-auto" for="name">Rechercher un nom ou un prénom qui commence par :</label>
+                            <input class="col form-control col-4" type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group row justify-content-end">
+                            <label class="col-auto" for="department">Filtrer par département :</label>
+                            <select class="form-control col-4" name="department" id="department">
+                                <option value="all" selected>Tous</option>
+                                <option value="compt">Comptabilité</option>
+                                <option value="rh">Ressources Humaines</option>
+                                <option value="it">Informatique</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-auto ml-5">
+                        <button class="btn-secondary form-control" type="submit">Rechercher</button>
+                    </div>
+                </div>
+                <div class="form-group col-auto mr-5 mt-2">
+                    <input class="form-check-input" type="checkbox" id="viewInactive">
+                    <label class="form-check-label" for="viewInactive">
+                        Voir les collaborateurs désactivés
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <section>
+            <div class="row justify-content-around">
+                <article class="card col-auto p-0 mb-3">
+                    <div class="card-header font-weight-bold">
+                        <span class="text-uppercase">Lefebvre</span> Maëline
+                    </div>
+                    <div class="card-body row justify-content-around">
+                        <div class="col-auto">
+                            <img class="img-thumbnail" src="https://randomuser.me/api/portraits/med/women/45.jpg" alt="">                        </div>
+                        <div class="col-auto small font-weight-small">
+                            <div class="row mb-1">
+                                <span class="col">Fonction</span>
+                                <span class="col text-right">Collaboratrice</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Département</span>
+                                <span class="col text-right text-nowrap">Ressources Humaines</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Email</span>
+                                <span class="col text-right">m.lefebvre@example.com</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Téléphone</span>
+                                <span class="col text-right">06 34 13 17 64</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end card-footer bg-transparent border-0">
+                        <button class="btn-sm btn-secondary border-0">Editer</button>
+                    </div>
+                </article>
+                <article class="card col-auto p-0 mb-3">
+                    <div class="card-header font-weight-bold">
+                        <span class="text-uppercase">Adams</span> Joey
+                    </div>
+                    <div class="card-body row justify-content-around">
+                        <div class="col-auto">
+                            <img class="img-thumbnail" src="https://randomuser.me/api/portraits/med/men/61.jpg" alt="">
+                        </div>
+                        <div class="col-auto small font-weight-small">
+                            <div class="row mb-1">
+                                <span class="col">Fonction</span>
+                                <span class="col text-right">Collaborateur</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Département</span>
+                                <span class="col text-right text-nowrap">Comptabilité</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Email</span>
+                                <span class="col text-right">joey.adams@example.com</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Téléphone</span>
+                                <span class="col text-right">07 07 02 09 38</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end card-footer bg-transparent border-0">
+                        <button class="btn-sm btn-secondary border-0">Editer</button>
+                    </div>
+                </article>
+                <article class="card col-auto p-0 mb-3">
+                    <div class="card-header font-weight-bold">
+                        <span class="text-uppercase">Walters</span> Rafael
+                    </div>
+                    <div class="card-body row justify-content-around">
+                        <div class="col-auto">
+                            <img class="img-thumbnail" src="https://randomuser.me/api/portraits/med/men/56.jpg" alt="">
+                        </div>
+                        <div class="col-auto small font-weight-small">
+                            <div class="row mb-1">
+                                <span class="col">Fonction</span>
+                                <span class="col text-right">Collaborateur</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Département</span>
+                                <span class="col text-right text-nowrap">Informatique</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Email</span>
+                                <span class="col text-right">rafael.walters@example.com</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Téléphone</span>
+                                <span class="col text-right">04 62 00 10 31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end card-footer bg-transparent border-0">
+                        <button class="btn-sm btn-secondary border-0">Editer</button>
+                    </div>
+                </article>
+                <article class="card col-auto p-0 mb-3">
+                    <div class="card-header font-weight-bold">
+                        <span class="text-uppercase">Lefebvre</span> Maëline
+                    </div>
+                    <div class="card-body row justify-content-around">
+                        <div class="col-auto">
+                            <img class="img-thumbnail" src="https://randomuser.me/api/portraits/med/women/45.jpg" alt="">                        </div>
+                        <div class="col-auto small font-weight-small">
+                            <div class="row mb-1">
+                                <span class="col">Fonction</span>
+                                <span class="col text-right">Collaboratrice</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Département</span>
+                                <span class="col text-right text-nowrap">Ressources Humaines</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Email</span>
+                                <span class="col text-right">m.lefebvre@example.com</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Téléphone</span>
+                                <span class="col text-right">06 34 13 17 64</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end card-footer bg-transparent border-0">
+                        <button class="btn-sm btn-secondary border-0">Editer</button>
+                    </div>
+                </article>
+                <article class="card col-auto p-0 mb-3">
+                    <div class="card-header font-weight-bold">
+                        <span class="text-uppercase">Adams</span> Joey
+                    </div>
+                    <div class="card-body row justify-content-around">
+                        <div class="col-auto">
+                            <img class="img-thumbnail" src="https://randomuser.me/api/portraits/med/men/61.jpg" alt="">
+                        </div>
+                        <div class="col-auto small font-weight-small">
+                            <div class="row mb-1">
+                                <span class="col">Fonction</span>
+                                <span class="col text-right">Collaborateur</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Département</span>
+                                <span class="col text-right text-nowrap">Comptabilité</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Email</span>
+                                <span class="col text-right">joey.adams@example.com</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Téléphone</span>
+                                <span class="col text-right">07 07 02 09 38</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end card-footer bg-transparent border-0">
+                        <button class="btn-sm btn-secondary border-0">Editer</button>
+                    </div>
+                </article>
+                <article class="card col-auto p-0 mb-3">
+                    <div class="card-header font-weight-bold">
+                        <span class="text-uppercase">Walters</span> Rafael
+                    </div>
+                    <div class="card-body row justify-content-around">
+                        <div class="col-auto">
+                            <img class="img-thumbnail" src="https://randomuser.me/api/portraits/med/men/56.jpg" alt="">
+                        </div>
+                        <div class="col-auto small font-weight-small">
+                            <div class="row mb-1">
+                                <span class="col">Fonction</span>
+                                <span class="col text-right">Collaborateur</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Département</span>
+                                <span class="col text-right text-nowrap">Informatique</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Email</span>
+                                <span class="col text-right">rafael.walters@example.com</span>
+                            </div>
+                            <div class="row mb-1">
+                                <span class="col">Téléphone</span>
+                                <span class="col text-right">04 62 00 10 31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end card-footer bg-transparent border-0">
+                        <button class="btn-sm btn-secondary border-0">Editer</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
