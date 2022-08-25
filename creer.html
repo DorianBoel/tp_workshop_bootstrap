@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to- fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>SGP - Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="text-info">
+                    SGP
+                </h1>
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Collaborateurs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activités</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mb-3">
+        <div class="container-fluid px-5">
+            <h2 class="mt-3">Nouveau collaborateur</h2>
+
+            <form class="mt-4" action="">
+                <div class="form-group row justify-content-center mr-5">
+                    <label class="col-2 col-form-label mr-5" for="lastName">Nom</label>
+                    <input class="col-5 form-control" type="text" name="lastName" id="lastName">
+                </div>
+                <div class="form-group row justify-content-center mr-5">
+                    <label class="col-2 col-form-label mr-5" for="firstName">Prénom</label>
+                    <input class="col-5 form-control" type="text" name="firstName" id="firstName">
+                </div>
+                <div class="form-group row justify-content-center mr-5">
+                    <label class="col-2 col-form-label mr-5" for="birthDate">Date de naissance</label>
+                    <input class="col-5 form-control" type="text" name="birthDate" id="birthDate">
+                </div>
+                <div class="form-group row justify-content-center mr-5">
+                    <label class="col-2 col-form-label mr-5" for="address">Adresse</label>
+                    <textarea class="col-5 form-control" rows="4" name="address" id="address"></textarea>
+                </div>
+                <div class="form-group row justify-content-center mr-5">
+                    <label class="col-2 col-form-label mr-5" for="securityNum">Numéro de sécurité sociale</label>
+                    <input class="col-5 form-control" type="text" name="securityNum" id="securityNum">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="d-flex col-7 justify-content-end">
+                        <button type="submit" class="btn btn-info mr-2">Créer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
