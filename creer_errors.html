@@ -42,76 +42,57 @@
 
     <main class="mb-3">
         <div class="container-fluid px-5">
-            <div class="d-flex justify-content-end mt-4">
-                <a href="creer_errors.html" class="btn btn-sm btn-dark">Afficher erreurs formulaire</a>
-            </div>
-            <h2 class="mt-1">Nouveau collaborateur</h2>
+            <h2 class="mt-3">Nouveau collaborateur</h2>
             <form class="mt-4" action="">
 
                 <div class="form-group row justify-content-center mr-5">
                     <label class="col-2 col-form-label mr-5 font-weight-bold" for="lastName">Nom</label>
-                    <input class="col-5 form-control" type="text" name="lastName" id="lastName">
+                    <div class="col-5 px-0">
+                        <input class="form-control is-invalid" type="text" name="lastName" id="lastName">
+                        <div class="invalid-feedback">
+                            Le nom est obligatoire
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group row justify-content-center mr-5">
                     <label class="col-2 col-form-label mr-5 font-weight-bold" for="firstName">Prénom</label>
-                    <input class="col-5 form-control" type="text" name="firstName" id="firstName">
+                    <div class="col-5 px-0">
+                        <input class="form-control is-invalid" type="text" name="firstName" id="firstName">
+                        <div class="invalid-feedback">
+                            Le prénom est obligatoire
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group row justify-content-center mr-5">
                     <label class="col-2 col-form-label mr-5 font-weight-bold" for="birthDate">Date de naissance</label>
-                    <input class="col-5 form-control" type="date" name="birthDate" id="birthDate">
+                    <div class="col-5 px-0">
+                        <input class="form-control is-invalid" type="date" name="birthDate" id="birthDate">
+                        <div class="invalid-feedback">
+                            La date de naissance est obligatoire
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group row justify-content-center mr-5">
                     <label class="col-2 col-form-label mr-5 font-weight-bold" for="address">Adresse</label>
-                    <textarea class="col-5 form-control" rows="4" name="address" id="address"></textarea>
+                    <div class="col-5 px-0">
+                        <textarea class="form-control is-invalid" rows="4" name="address" id="address"></textarea>
+                        <div class="invalid-feedback">
+                            L'adresse est obligatoire
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group row justify-content-center mr-5">
                     <label class="col-2 col-form-label mr-5 font-weight-bold" for="securityNum">Numéro de sécurité sociale</label>
-                    <input class="col-5 form-control" type="text" name="securityNum" id="securityNum">
+                    <div class="col-5 px-0">
+                        <input class="form-control is-invalid" type="text" name="securityNum" id="securityNum">
+                        <div class="invalid-feedback">
+                            Le numéro de sécurité sociale est obligatoire
+                        </div>
+                    </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="d-flex col-7 justify-content-end">
-                        <button type="button" class="btn btn-info mr-2" data-toggle="modal" data-target="#confirmCreate">Créer</button>
-                    </div>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="confirmCreate" tabindex="-1" role="dialog" aria-labelledby="confirmCreateLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content w-100">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="confirmCreateLabel">Création d'un collaborateur</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="h6 mb-2">Vous êtes sur le point de créer un nouveau collaborateur :</span>
-                                <div class="row mt-4">
-                                    <span class="col font-weight-bold">Nom</span>
-                                    <span class="col">Pucepré</span>
-                                </div>
-                                <div class="row mt-4">
-                                    <span class="col font-weight-bold">Prénom</span>
-                                    <span class="col">Jean-Paul</span>
-                                </div>
-                                <div class="row mt-4">
-                                    <span class="col font-weight-bold">Date de naissance</span>
-                                    <span class="col">10/11/1970</span>
-                                </div>
-                                <div class="row mt-4">
-                                    <span class="col font-weight-bold">Adresse</span>
-                                    <span class="col">154 Rue de L'Abbé-Gillet, 75000 Paris</span>
-                                </div>
-                                <div class="row mt-4">
-                                    <span class="col font-weight-bold">Numéro de sécurité sociale</span>
-                                    <span class="col">1 70 11 75 056 089 43</span>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                                <button type="submit" class="btn btn-info">Confirmer</button>
-                            </div>
-                        </div>
+                        <button type="submit" class="btn btn-info mr-2">Créer</button>
                     </div>
                 </div>
 
