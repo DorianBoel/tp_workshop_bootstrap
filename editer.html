@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to- fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>SGP - Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="text-info">
+                    SGP
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Collaborateurs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activités</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mb-3">
+        <div class="container-fluid px-5">
+            <section class="row mt-4">
+                <div class="col-4">
+                    <img class="img-thumbnail" src="https://icon-library.com/images/generic-user-icon/generic-user-icon-19.jpg" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2>
+                            NOM Prénom - Matricule
+                        </h2>
+                        <div>
+                            <input type="checkbox" name="disable" id="disable">
+                            <label for="disable">
+                                Désactiver
+                            </label>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="accordion" id="accordionForm">
+                            <div class="card">
+                                <a class="text-dark" type="button" data-toggle="collapse" data-target="#identity" aria-expanded="true" aria-controls="identity">
+                                    <div class="card-header" id="identityCollapse">
+                                        <h3 class="h5 mb-0">
+                                            Identité
+                                        </h3>
+                                    </div>
+                                </a>
+                                <div id="identity" class="collapse show" aria-labelledby="identityCollapse">
+                                    <div class="card-body">
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="civility">Civilité</label>
+                                            <select class="col form-control" name="civility" id="civility">
+                                                <option selected>--</option>
+                                                <option value="monsieur">M.</option>
+                                                <option value="madame">Mme</option>
+                                                <option value="mademoiselle">Mlle</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="lastName">Nom</label>
+                                            <input class="col form-control" type="text" name="lastName" id="lastName">
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="firstName">Prénom</label>
+                                            <input class="col form-control" type="text" name="firstName" id="firstName">
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="birthDate">Date de naissance</label>
+                                            <input class="col form-control" type="date" name="birthDate" id="birthDate">
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="address">Adresse</label>
+                                            <textarea class="col l-5 form-control" rows="4" name="address" id="address"></textarea>
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="securityNum">Numéro de sécurité sociale</label>
+                                            <input class="col form-control" type="text" name="securityNum" id="securityNum">
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="phoneNum">Téléphone</label>
+                                            <input class="col form-control" type="tel" name="phoneNum" id="phoneNum">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a class="text-dark" type="button" data-toggle="collapse" data-target="#post" aria-expanded="true" aria-controls="post">
+                                    <div class="card-header" id="postCollapse">
+                                        <h3 class="h5 mb-0">
+                                            Poste
+                                        </h3>
+                                    </div>
+                                </a>
+                                <div id="post" class="collapse" aria-labelledby="postCollapse">
+                                    <div class="card-body">
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="department">Département</label>
+                                            <select class="col form-control" name="department" id="department">
+                                                <option selected>--</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="depName">Nom</label>
+                                            <input class="col form-control" type="text" name="depName" id="depName">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a class="text-dark" type="button" data-toggle="collapse" data-target="#bankInfo" aria-expanded="true" aria-controls="bankInfo">
+                                    <div class="card-header" id="bankCollapse">
+                                        <h3 class="h5 mb-0">
+                                            Coordonnées Bancaires
+                                        </h3>
+                                    </div>
+                                </a>
+                                <div id="bankInfo" class="collapse" aria-labelledby="bankCollapse">
+                                    <div class="card-body">
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="iban">IBAN</label>
+                                            <input class="col form-control" type="text" name="iban" id="iban">
+                                        </div>
+                                        <div class="form-group row justify-content-center mr-2">
+                                            <label class="col col-form-label mr-5 font-weight-bold" for="BIC">BIC</label>
+                                            <input class="col form-control" type="text" name="BIC" id="BIC">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="submit" class="btn btn-info mr-2">Sauvegarder</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
